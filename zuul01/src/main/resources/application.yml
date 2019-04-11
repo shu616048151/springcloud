@@ -1,0 +1,25 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: zuul01
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+zuul:
+  routes:
+    users:
+      path: /users/**
+      serviceId: server01   #使用serviceId进行映射
+    ip:
+      path: /ip/**
+      url: http://localhost:7001/  #传统映射方式，映射到url地址上
+  ignored-services: "*" #在zuul-api工程下，忽略原服务名访问模式，只能通过zuul代理的方式访问
+
+
+
+
+
