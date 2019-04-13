@@ -1,5 +1,6 @@
 package com.shu.consumer.service;
 
+import com.shu.consumer.domain.User;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -10,4 +11,21 @@ public class FallBackService implements  FeignHtstrixService {
     public String getUser() {
         return "error,调用失败";
     }
+
+    @Override
+    public String getUser1(String id) {
+        return null;
+    }
+
+    @Override
+    public String getUser2(User user) {
+        return null;
+    }
+
+    @Override
+    public String getUser3(String id) {
+        return null;
+    }
+
+
 }
