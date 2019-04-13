@@ -4,7 +4,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/consumer01/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix/pom.xml" />
         <option value="$PROJECT_DIR$/server01/pom.xml" />

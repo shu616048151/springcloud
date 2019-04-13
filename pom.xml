@@ -13,6 +13,8 @@
         <module>server02</module>
         <module>server01</module>
         <module>zuul01</module>
+        <module>eurekaserver</module>
+        <module>configserver</module>
     </modules>
 
     <packaging>pom</packaging>
